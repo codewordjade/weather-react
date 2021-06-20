@@ -71,7 +71,7 @@ export default function Weather() {
         </div>
         <small>
           <a
-            href="https://github.com/codewordjade/weather-react"
+            href="https://github.com/codewordjade/Vanilla-weather-app"
             target="blank"
           >
             Open-Source code
