@@ -47,7 +47,7 @@ export default function Weather() {
                 <div className="d-flex weather-temperature">
                   <img src="#" alt="#" className="float-left" />
                   <div className="float-left">
-                    <strong>{temperature}</strong>
+                    <strong>{Math.round(temperature)}</strong>
                     <span className="units">
                       <a href="/" className="active">
                         °C
