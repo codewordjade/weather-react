@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import FormattedDate from "./FormattedDate.js";
+import WeatherInfo from "./WeatherInfo.js";
 import axios from "axios";
 import "./Weather.css";
 export default function Weather(props) {
@@ -42,54 +42,8 @@ export default function Weather(props) {
                 </div>
               </div>
             </form>
-            <h1>{weatherData.city}</h1>
-            <ul>
-              <li>
-                <FormattedDate date={weatherData.date} />
-              </li>
-              <li className="text-capitalize">{weatherData.description}</li>
-            </ul>
-            <div className="row">
-              <div className="col-6">
-                <div className="d-flex weather-temperature">
-                  <img
-                    src={weatherData.iconUrl}
-                    alt={weatherData.description}
-                    className="float-left"
-                  />
-                  <div className="float-left">
-                    <strong>{Math.round(weatherData.temperature)}</strong>
-                    <span className="units">
-                      <a href="/" className="active">
-                        °C
-                      </a>{" "}
-                      |<a href="/">°F</a>
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div className="col-6">
-                <ul>
-                  <li>
-                    Humidity: <span>{weatherData.humidity}</span> %
-                  </li>
-                  <li>
-                    Wind: <span>{weatherData.wind}</span> mph
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div className="weather-forecast"></div>
+            <WeatherInfo data={weatherData} />
           </div>
-          <small>
-            <a
-              href="https://github.com/codewordjade/Vanilla-weather-app"
-              target="blank"
-            >
-              Open-Source code
-            </a>
-            by Jade Knowles
-          </small>
         </div>
       </div>
     );
