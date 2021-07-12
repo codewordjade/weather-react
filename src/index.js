@@ -4,7 +4,7 @@ import Weather from "./Weather";
 const rootElement = document.getElementById("root");
 ReactDOM.render(
   <StrictMode>
-    <Weather city="Bradford" />
+    <Weather defaultCity="Bradford" />
   </StrictMode>,
   rootElement
 );
