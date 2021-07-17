@@ -44,10 +44,9 @@
   text-decoration: none;
 }
 
-.Weather img {
+.Weather canvas {
   margin-right: 5px;
-  height: 90px;
-  width: 90px;
+  display: inline-block;
 }
 
 .temperature {
