@@ -1,19 +1,16 @@
 .Weather {
   background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-  margin: 0 auto;
-  height: 100%;
   font-family: "Karla", sans-serif;
-  color: aliceblue;
   padding: 20px;
-  border: 1px solid #dadde1;
   border-radius: 5px;
-  max-width: 600px;
-  margin: 30px auto;
+  border: 1px solid #dadde1;
+  color: aliceblue;
 }
 
 .Weather h1 {
   font-size: 24px;
   font-weight: 100;
+  margin: 20px 0 0 0;
   line-height: 28px;
 }
 
@@ -24,11 +21,8 @@
 
 .Weather li {
   list-style: none;
-  margin: 0;
-  padding: 0;
   font-size: 16px;
   font-weight: 100;
-  height: auto;
   line-height: 19px;
 }
 
@@ -36,28 +30,18 @@
   text-transform: capitalize;
 }
 
-.Weather small {
-  color: black;
-}
-
 .Weather a {
   text-decoration: none;
 }
 
 .Weather canvas {
-  margin-right: 5px;
-  display: inline-block;
+  margin: 10px auto;
 }
 
-.temperature {
+.Weather .temperature {
   font-size: 45px;
   font-weight: 400;
   line-height: 1;
-}
-
-.weather-temperature .unit {
-  font-size: 16px;
-  top: -34px;
 }
 
 .weather-temperature .active {

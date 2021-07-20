@@ -1,18 +1,26 @@
-import logo from "./logo.svg";
+import React from "react";
+import Weather from "./Weather";
 import "./App.css";
 
 import Weather from "./Weather";
 
-function App() {
+export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+      <div className="container">
+        <Weather defaultCity="Bradford" />
 
-        <Weather defaultCity="Leeds" />
-      </header>
+        <footer>
+          This project was coded by Jade Knowles and is
+          <a href="https://github.com/codewordjade/weather-react">
+            open-sourced on Github
+          </a>{" "}
+          and{""}
+          <a href="https://clever-galileo-0aa257.netlify.app/">
+            hosted on Netlify
+          </a>
+        </footer>
+      </div>
     </div>
   );
 }
-
-export default App;
